@@ -14,8 +14,10 @@ import frutifiqueLogo from '../../assets/frutifique-logo.png';
 import fruitImage from '../../assets/fruit.png';
 import swipeUp from '../../assets/swipe-up.png';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function HomePage() {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
@@ -81,7 +83,9 @@ export function HomePage() {
           sua resposta, apenas determine rapidamente e com sinceridade um valor
           para a afirmação.
         </p>
-        <Button>Começar</Button>
+        <Button style={{ width: '75%' }} onClick={() => navigate('/quiz')}>
+          Começar
+        </Button>
       </IntroSection>
     </PageContainer>
   );
