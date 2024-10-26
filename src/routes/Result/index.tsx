@@ -1,5 +1,5 @@
-import { Key, useContext, useEffect, useState } from 'react';
-import { Fruits, QuizContext } from '../../contexts/QuizContext';
+import { useContext, useEffect, useState } from 'react';
+import { QuizContext } from '../../contexts/QuizContext';
 import {
   LargeImage,
   PageContainer,

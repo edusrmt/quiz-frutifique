@@ -1,5 +1,3 @@
-import { Fruits } from '../contexts/QuizContext';
-
 export const FruitsDescription = new Map<
   string,
   { title: string; description: string }
