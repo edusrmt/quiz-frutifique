@@ -148,12 +148,12 @@ export const CreditsLabel = styled.span`
   position: relative;
   margin-top: -3rem;
   font-size: 0.9rem;
-  opacity: 0.4;
+  opacity: 0.3;
 
   a:link,
   a:visited {
     color: inherit;
-    text-decoration-color: rgba(25, 25, 25, 0.4);
+    text-decoration-color: rgba(25, 25, 25, 0.3);
     text-underline-offset: 0.1rem;
   }
 `;
