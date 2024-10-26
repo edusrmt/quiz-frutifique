@@ -5,6 +5,7 @@ import {
   OptionsContainer,
   PageContainer,
   ProgressBar,
+  ProgressBarContainer,
   QuestionContainer,
   QuestionSpacer,
   SmallImage,
@@ -49,7 +50,7 @@ export function QuizPage() {
       <LargeImage src={frutifiqueImg} alt="Frutifique" />
       <QuestionSpacer>
         <QuestionContainer>
-          <span>{`#${curQuestion + 1}`}</span>
+          <span>{String(curQuestion + 1).padStart(2, '0')}/45</span>
           <p>{quizData[curQuestion].wording}</p>
         </QuestionContainer>
       </QuestionSpacer>
@@ -60,9 +61,11 @@ export function QuizPage() {
         <Button onClick={() => handleSelectOption(0)}>Nunca</Button>
       </OptionsContainer>
       <SmallImage src={elasPorElasLogo} alt="Elas por Elas" />
-      <ProgressBar
-        style={{ width: `${(curQuestion / 45) * 100}vw` }}
-      ></ProgressBar>
+      <ProgressBarContainer>
+        <ProgressBar
+          style={{ width: `${(curQuestion / 45) * 100}vw` }}
+        ></ProgressBar>
+      </ProgressBarContainer>
     </PageContainer>
   );
 }

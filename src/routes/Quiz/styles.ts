@@ -75,13 +75,17 @@ export const SmallImage = styled.img`
   }
 
   width: 15%;
+  margin-bottom: 0.5rem;
   animation: wiggle ease-in-out 12s infinite;
 `;
 
+export const ProgressBarContainer = styled.div`
+  position: relative;
+  margin-bottom: -2rem;
+  width: 100vw;
+`;
+
 export const ProgressBar = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
   height: 0.5rem;
 
   border-image-slice: 36;
