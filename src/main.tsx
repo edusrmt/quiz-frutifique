@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QuizPage } from './routes/Quiz/index.tsx';
 import { ResultPage } from './routes/Result/index.tsx';
 import { QuizContextProvider } from './contexts/QuizContext.tsx';
+import { Analytics } from '@vercel/analytics/react';
 
 const router = createBrowserRouter([
   {
@@ -28,5 +29,6 @@ createRoot(document.getElementById('root')!).render(
     <QuizContextProvider>
       <RouterProvider router={router} />
     </QuizContextProvider>
+    <Analytics />
   </StrictMode>
 );
