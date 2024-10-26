@@ -16,6 +16,7 @@ import fruitImage from '../../assets/fruit.png';
 import swipeUp from '../../assets/swipe-up.png';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { DesktopWarning } from '../../components/DesktopWarning';
 
 export function HomePage() {
   const navigate = useNavigate();
@@ -46,6 +47,10 @@ export function HomePage() {
       window.removeEventListener('scrollend', handleScroll);
     };
   }, [currentPage]);
+
+  if (window.outerWidth > window.outerHeight) {
+    return <DesktopWarning />;
+  }
 
   return (
     <PageContainer>

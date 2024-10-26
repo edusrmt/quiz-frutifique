@@ -15,6 +15,7 @@ import { QuizContext } from '../../contexts/QuizContext';
 import { useNavigate } from 'react-router-dom';
 import frutifiqueImg from '../../assets/frutifique-only.png';
 import elasPorElasLogo from '../../assets/epe-logo.png';
+import { DesktopWarning } from '../../components/DesktopWarning';
 
 export function QuizPage() {
   const navigate = useNavigate();
@@ -44,6 +45,10 @@ export function QuizPage() {
       navigate('/resultado');
     }
   };
+
+  if (window.outerWidth > window.outerHeight) {
+    return <DesktopWarning />;
+  }
 
   return (
     <PageContainer>

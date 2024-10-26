@@ -15,6 +15,7 @@ import frutifiqueImg from '../../assets/frutifique-only.png';
 import elasPorElasLogo from '../../assets/epe-logo.png';
 import { FruitsDescription } from '../../data/fruits';
 import { useNavigate } from 'react-router-dom';
+import { DesktopWarning } from '../../components/DesktopWarning';
 
 type ResultType = {
   fruit: string;
@@ -62,6 +63,10 @@ export function ResultPage() {
     resetScore();
     navigate('/');
   };
+
+  if (window.outerWidth > window.outerHeight) {
+    return <DesktopWarning />;
+  }
 
   return (
     <PageContainer>
