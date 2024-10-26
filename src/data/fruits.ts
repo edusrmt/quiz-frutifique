@@ -31,7 +31,7 @@ export const FruitsDescription = new Map<
     {
       title: 'Paciência',
       description:
-        'Paciência é mais do que apenas esperar com calma; é a capacidade de suportar com esperança e confiança. Ser longânimo significa ter uma atitude de perseverança e calma, mesmo quando as coisas não acontecem no tempo que desejamos.',
+        'Paciência é mais do que apenas esperar com calma, é a capacidade de suportar com esperança e confiança. Ser paciente significa ter uma atitude de perseverança e calma, mesmo quando as coisas não acontecem no tempo que desejamos.',
     },
   ],
   [
@@ -39,7 +39,7 @@ export const FruitsDescription = new Map<
     {
       title: 'Amabilidade',
       description:
-        'Amabilidade é uma gentileza que reflete a bondade de Deus em nossas interações com os outros. É agir com compaixão, misericórdia e gentileza, especialmente quando os outros não merecem. A benignidade nos leva a tratar os outros com respeito e cuidado, independentemente de como somos tratados.',
+        'Amabilidade é uma gentileza que reflete a bondade de Deus em nossas interações com os outros. É agir com compaixão, misericórdia e gentileza, especialmente quando os outros não merecem. A amabilidade nos leva a tratar os outros com respeito e cuidado, independentemente de como somos tratadas.',
     },
   ],
   [
@@ -55,7 +55,7 @@ export const FruitsDescription = new Map<
     {
       title: 'Fidelidade',
       description:
-        'Fidelidade é ser confiável e firme no relacionamento com Deus e com os outros. Envolve lealdade, compromisso e verdade. Ser ser honesto e verdadeiro com as pessoas em nossas vidas. Um espírito fiel é aquele que permanece firme, mesmo quando a vida é difícil.',
+        'Fidelidade é ser confiável e firme no relacionamento com Deus e com os outros. Envolve lealdade, compromisso e verdade. Ser honesto e verdadeiro com as pessoas em nossas vidas. Um espírito fiel é aquele que permanece firme, mesmo quando a vida é difícil.',
     },
   ],
   [
