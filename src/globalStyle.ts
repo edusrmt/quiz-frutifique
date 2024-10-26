@@ -9,6 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: Rawson;
+    src: url('/fonts/rawson-semi-bold.otf');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: Rawson;
     src: url('/fonts/rawson-bold.otf');
     font-weight: bold;
   }

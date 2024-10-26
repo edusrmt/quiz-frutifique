@@ -13,4 +13,9 @@ export const Button = styled.button`
   color: #fff;
   text-transform: uppercase;
   vertical-align: middle;
+  transition: 100ms ease-out;
+
+  &:active {
+    background-color: #ff5a14;
+  }
 `;

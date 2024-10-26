@@ -15,6 +15,7 @@ export enum Fruits {
 type QuizContextType = {
   fruits: { [key in Fruits]: number };
   addScore: (fruit: Fruits, value: number) => void;
+  resetScore: () => void;
 };
 
 const INITIAL_STATE: QuizContextType = {
@@ -30,6 +31,7 @@ const INITIAL_STATE: QuizContextType = {
     selfControl: 0,
   },
   addScore: () => {},
+  resetScore: () => {},
 };
 
 export const QuizContext = createContext(INITIAL_STATE);
@@ -46,8 +48,12 @@ export function QuizContextProvider({ children }: QuizContextProviderProps) {
     setFruits({ ...fruits, [fruit]: newScore });
   };
 
+  const resetScore = () => {
+    setFruits(INITIAL_STATE.fruits);
+  };
+
   return (
-    <QuizContext.Provider value={{ fruits, addScore }}>
+    <QuizContext.Provider value={{ fruits, addScore, resetScore }}>
       {children}
     </QuizContext.Provider>
   );
