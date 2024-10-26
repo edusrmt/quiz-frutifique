@@ -143,3 +143,17 @@ export const SwipeUpContainer = styled.div`
     text-shadow: 0px 2px 0px #b2a98f, 0px 6px 10px rgba(0, 0, 0, 0.15);
   }
 `;
+
+export const CreditsLabel = styled.span`
+  position: relative;
+  margin-top: -3rem;
+  font-size: 0.9rem;
+  opacity: 0.4;
+
+  a:link,
+  a:visited {
+    color: inherit;
+    text-decoration-color: rgba(25, 25, 25, 0.4);
+    text-underline-offset: 0.1rem;
+  }
+`;

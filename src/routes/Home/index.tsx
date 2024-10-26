@@ -9,6 +9,7 @@ import {
   IntroSection,
   SwipeUpContainer,
   ImagesContainer,
+  CreditsLabel,
 } from './styles';
 import frutifiqueLogo from '../../assets/frutifique-logo.png';
 import fruitImage from '../../assets/fruit.png';
@@ -87,6 +88,16 @@ export function HomePage() {
           Começar
         </Button>
       </IntroSection>
+      <CreditsLabel>
+        Desenvolvido por{' '}
+        <a
+          href="https://www.instagram.com/edu.sarmento"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Eduardo Sarmento
+        </a>
+      </CreditsLabel>
     </PageContainer>
   );
 }
